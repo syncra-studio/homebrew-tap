@@ -9,6 +9,7 @@ cask "brigadier" do
 
   livecheck do
     url :url
+    regex(/^v?(\d+(?:\.\d+)+(?:-[\w.]+)?)$/i)
     strategy :github_latest
   end
 
